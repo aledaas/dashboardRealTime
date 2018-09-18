@@ -1,0 +1,142 @@
+{
+    "id": "5ba0558be707c0f192c3efe7",
+    "database": "SalesReporting",
+    "collection": "Receipts",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {
+                "%%true": true
+            },
+            "fields": {
+                "_id": {
+                    "read": true
+                },
+                "cardNumber": {
+                    "read": {
+                        "%%true": false
+                    }
+                },
+                "customerName": {
+                    "read": {
+                        "%%true": false
+                    }
+                },
+                "location": {
+                    "read": {
+                        "%%true": false
+                    }
+                },
+                "size": {
+                    "read": true
+                },
+                "timestamp": {
+                    "read": true
+                },
+                "topping": {
+                    "read": true
+                },
+                "total": {
+                    "read": true
+                }
+            },
+            "write": {
+                "cardNumber": {
+                    "%exists": true
+                },
+                "customerName": {
+                    "%exists": true
+                },
+                "location": {
+                    "%exists": true
+                },
+                "size": {
+                    "%exists": true
+                },
+                "timestamp": {
+                    "%exists": true
+                },
+                "topping": {
+                    "%exists": true
+                },
+                "total": {
+                    "%exists": true
+                }
+            },
+            "insert": {
+                "cardNumber": {
+                    "%exists": true
+                },
+                "customerName": {
+                    "%exists": true
+                },
+                "location": {
+                    "%exists": true
+                },
+                "size": {
+                    "%exists": true
+                },
+                "timestamp": {
+                    "%exists": true
+                },
+                "topping": {
+                    "%exists": true
+                },
+                "total": {
+                    "%exists": true
+                }
+            },
+            "delete": {
+                "cardNumber": {
+                    "%exists": true
+                },
+                "customerName": {
+                    "%exists": true
+                },
+                "location": {
+                    "%exists": true
+                },
+                "size": {
+                    "%exists": true
+                },
+                "timestamp": {
+                    "%exists": true
+                },
+                "topping": {
+                    "%exists": true
+                },
+                "total": {
+                    "%exists": true
+                }
+            },
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {},
+            "cardNumber": {
+                "validate": {}
+            },
+            "customerName": {
+                "validate": {}
+            },
+            "location": {
+                "validate": {}
+            },
+            "size": {
+                "validate": {}
+            },
+            "timestamp": {
+                "validate": {}
+            },
+            "topping": {
+                "validate": {}
+            },
+            "total": {
+                "validate": {}
+            }
+        },
+        "validate": {}
+    }
+}

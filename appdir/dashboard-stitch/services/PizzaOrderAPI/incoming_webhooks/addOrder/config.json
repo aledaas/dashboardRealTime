@@ -1,0 +1,12 @@
+{
+    "id": "5ba0558ae707c0f192c3efe0",
+    "name": "addOrder",
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "POST",
+        "secret": "yummypizza",
+        "validationMethod": "SECRET_AS_QUERY_PARAM"
+    },
+    "respond_result": true
+}
