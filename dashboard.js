@@ -4,7 +4,7 @@ const loginForm = document.getElementById("login-form");
 const logoutButton = document.getElementById("logout-button");
 
 // Setup MongoDB Stitch
-const APP_ID = "dashboard-buenosaires-hjfnw";
+const APP_ID = "dashboard-jhhpc";
 const {
   Stitch,
   UserPasswordCredential,

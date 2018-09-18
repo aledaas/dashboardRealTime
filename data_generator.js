@@ -1,24 +1,24 @@
 const fetch = require('node-fetch');
 
-const getPopularToppingsWebhook = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/dashboard-buenosaires-hjfnw/service/PizzaOrderAPI/incoming_webhook/addOrder?secret=yummypizza"; // <webhook url>?secret=<secret>
+const getPopularToppingsWebhook = "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/dashboard-jhhpc/service/PizzaOrderAPI/incoming_webhook/addOrder?secret=yummypizza";
 
 const chance = require("chance").Chance(); // Package for random variables
 
 // Seeds for the random data
-const LOCATIONS = ["Store 1", "Store 2", "Store 3"];
+const LOCATIONS = ["Caballito", "Floresta", "Palermo"];
 const TOPPINGS = [
-  "Pepperoni",
-  "Mushrooms",
-  "Onions",
-  "Sausage",
-  "Bacon",
-  "Extra cheese",
-  "Black olives",
-  "Green peppers",
-  "Pineapple",
-  "Spinach"
+    "Pepperoni",
+    "Napolitana",
+    "Pollo BBQ",
+    "Tropical",
+    "Hawaiiana",
+    "Americana",
+    "Fugazza",
+    "Cuatro Estaciones",
+    "Vegetariana",
+    "Roquefort"
 ];
-const SIZES = ["Personal", "Small", "Medium", "Large", "X-tra Large"];
+const SIZES = ["Individual", "Mediana", "Grande", "Extra Grande", "X-Metro"];
 
 generateReceipts();
 
